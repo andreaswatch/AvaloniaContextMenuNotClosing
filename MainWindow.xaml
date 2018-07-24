@@ -1,0 +1,26 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AvaloniaApplicationContextMenu">
+  <Menu VerticalAlignment="Top">
+    <MenuItem Header="WorksAsExpected 1" ToolTip.Tip="Closes Menu when mouse points to other Main MenuItem">
+      <MenuItem Header="1bbb"></MenuItem>
+      <MenuItem Header="1ccc"></MenuItem>
+    </MenuItem>
+    <MenuItem Header="WorksAsExpected 2" ToolTip.Tip="Closes Menu when mouse points to other Main MenuItem">
+      <MenuItem Header="2bbb"></MenuItem>
+      <MenuItem Header="2ccc"></MenuItem>
+    </MenuItem>
+  </Menu>
+  <Window.ContextMenu>
+    <ContextMenu>
+      <MenuItem Header="Not working correctly" ToolTip.Tip="Shoud behave like MainMenu">
+        <MenuItem Header="1bbb"></MenuItem>
+        <MenuItem Header="1ccc"></MenuItem>
+      </MenuItem>
+      <MenuItem Header="Not working correctly" ToolTip.Tip="Shoud behave like MainMenu">
+        <MenuItem Header="2bbb"></MenuItem>
+        <MenuItem Header="2ccc"></MenuItem>
+      </MenuItem>
+    </ContextMenu>
+  </Window.ContextMenu>
+</Window>
